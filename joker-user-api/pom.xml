@@ -15,7 +15,7 @@
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>
 
-	
+
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
@@ -27,27 +27,31 @@
 			<optional>true</optional>
 		</dependency>
 		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-starter-eureka</artifactId>
+			<version>1.4.5.RELEASE</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-starter-feign</artifactId>
+			<version>1.4.5.RELEASE</version>
+		</dependency>
+		<dependency>
             <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-eureka</artifactId>
-            <version>1.4.5.RELEASE</version>
+            <artifactId>spring-cloud-starter-oauth2</artifactId>
         </dependency>
-        <dependency>
+        <!-- <dependency>
             <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-feign</artifactId>
-            <version>1.4.5.RELEASE</version>
-        </dependency>
-         <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-hystrix</artifactId>
-             <version>1.4.5.RELEASE</version>
-        </dependency>
-
-       <!--  <dependency>
-            <groupId>com.joker.security</groupId>
-            <artifactId>joker-security-resource-server</artifactId>
-            <version>0.0.1-SNAPSHOT</version>
+            <artifactId>spring-cloud-starter-zuul</artifactId>
+        	<version>1.4.5.RELEASE</version>
         </dependency> -->
-        
+
+		<dependency>
+			<groupId>com.joker.security</groupId>
+			<artifactId>joker-security-resource-server</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
+
 	</dependencies>
 
 	<dependencyManagement>

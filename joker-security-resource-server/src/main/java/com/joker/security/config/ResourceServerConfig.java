@@ -16,7 +16,7 @@ public class ResourceServerConfig extends ResourceServerConfigurerAdapter {
 
 	@Override
 	public void configure(HttpSecurity http) throws Exception {
-		http.sessionManagement().sessionCreationPolicy(SessionCreationPolicy.STATELESS)
+		http.sessionManagement().sessionCreationPolicy(SessionCreationPolicy.ALWAYS)
         .and()
         .authorizeRequests().anyRequest().authenticated();
 	}

@@ -4,6 +4,9 @@
         <wb-resource deploy-path="/" source-path="/src/main/webapp" tag="defaultRootSource"/>
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/java"/>
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/resources"/>
+        <dependent-module archiveName="joker-security-resource-server-0.0.1-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/joker-security-resource-server/joker-security-resource-server">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
         <property name="context-root" value="joker-user-api"/>
         <property name="java-output-path" value="/joker-user-api/target/classes"/>
     </wb-module>
