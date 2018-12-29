@@ -3,22 +3,22 @@ pipeline{
 	stages{
 		stage('Compile step'){
 			steps{
-				withMaven(maven : 'Maven3'){
-					sh 'mvn clean compile'
+				maven(maven : 'Maven3'){
+					bat 'mvn clean compile'
 				}
 			}
 		}
 		stage('Test step'){
 			steps{
-				withMaven(maven : 'Maven3'){
-					sh 'mvn test'
+				maven(maven : 'Maven3'){
+					bat 'mvn test'
 				}
 			}
 		}
 		stage('Deploy step'){
 			steps{
-				withMaven(maven : 'Maven3'){
-					sh 'mvn deploy'
+				maven(maven : 'Maven3'){
+					bat 'mvn deploy'
 				}
 			}
 		}
